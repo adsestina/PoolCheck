@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>"Pool Tester</title>
+    <link rel="stylesheet" href = "css/PoolCheck.css">
+    <link href="https://fonts.googleapis.com/css?family=Changa+One" rel="stylesheet">
+</head>
+<body>
+
+<p>How many gallons are your pool?</p>
+<input type="text" name="gallons">
+<p id = "gallons"></p>
+
+<div align="center" class="fond">
+    <div style="width:1000px;">
+        <p>pH</p>
+
+        <div class="pH">
+            <button class="#62" onclick='ph62()' style="background-color:#cb9349; font-size: 24px; width: 125px; padding: 24px 24px">6.2</button>
+            <button class="#68" onclick='ph68()' style="background-color:#cb6830; font-size: 24px; width: 125px; padding: 24px 24px">6.8</button>
+            <button class="#72" onclick='ph72()' style="background-color:#b34722; font-size: 24px; width: 125px; padding: 24px 24px">7.2</button>
+            <button class="#78" onclick='ph78()' style="background-color:#df5a3e;font-size: 24px; width: 125px; padding: 24px 24px">7.8</button>
+            <button class="#84" onclick='ph84()' style="background-color:#d9473e; font-size: 24px; width: 125px; padding: 24px 24px">8.4</button>
+        </div>
+        <p id="pHLevel"></p>
+
+        <p>Chlorine</p>
+
+        <div class="chlorine">
+            <button class="#0" onclick='c0()' style="background-color:#c9cbaf; font-size: 24px; width: 125px; padding: 24px 24px">0</button>
+            <button class="#0.5" onclick='c05()' style="background-color:#b9b4ac; font-size: 24px; width: 125px; padding: 24px 24px;">0.5</button>
+            <button class="#1" onclick='c1()' style="background-color:#e1cee7; font-size: 24px; width: 125px; padding: 24px 24px">1</button>
+            <button class="#3" onclick='c3()' style="background-color:#e894f0;font-size: 24px; width: 125px; padding: 24px 24px">3</button>
+            <button class="#5" onclick='c5()' style="background-color:#97619c;font-size: 24px; width: 125px; padding: 24px 24px">5</button>
+            <button class="#10" onclick='c10()' style="background-color:#654068;font-size: 24px; width: 125px; padding: 24px 24px">10</button>
+        </div>
+        <p id="chlorineLevel"></p>
+
+        <p>Total Alkalinity</p>
+
+    <div class="alkalinity">
+        <button class="#0" onclick='a0()' style="background-color:#cb9349; font-size: 24px; width: 125px; padding: 24px 24px">0</button>
+        <button class="#40" onclick='a40()' style="background-color:#877a27; font-size: 24px; width: 125px; padding: 24px 24px">40</button>
+        <button class="#80" onclick='a80()' style="background-color:#574f19; font-size: 24px; width: 125px; padding: 24px 24px">80</button>
+        <button class="#120" onclick='a120()' style="background-color:#579568;font-size: 24px; width: 125px; padding: 24px 24px">120</button>
+        <button class="#180" onclick='a180()' style="background-color:#355e40;font-size: 24px; width: 125px; padding: 24px 24px">180</button>
+        <button class="#240" onclick='a240()' style="background-color:#3a6e67;font-size: 24px; width: 125px; padding: 24px 24px">240</button>
+    </div>
+        <p id="alkalinityLevel"></p>
+
+    <p>Stabilizer</p>
+
+    <div class="stabilizer">
+    <button class="#0" onclick='s0()' style="background-color:#cb9349; font-size: 24px; width: 125px; padding: 24px 24px">0</button>
+    <button class="30_50" onclick='s3050()' style="background-color:#9c5812; font-size: 24px; width: 125px; padding: 24px 24px">30-50</button>
+    <button class="#100" onclick='s100()' style="background-color:#9c3f18; font-size: 24px; width: 125px; padding: 24px 24px">100</button>
+    <button class="#150" onclick='s150()' style="background-color:#6f1331;font-size: 24px; width: 125px; padding: 24px 24px">150</button>
+    <button class="#300" onclick='s300()' style="background-color:#751258;font-size: 24px; width: 125px; padding: 24px 24px">300</button>
+    </div>
+        <p id="stabilizerLevel"></p>
+
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<script src="scripts/PoolCheck.js"></script>
+</body>
+</html>
